@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <audio preload autoplay loop id="vd">
+        <source src="renxi.mp3" type="audio/mpeg">
+    </audio>
+    abc
+    <script type="text/javascript">
+        window.onload = function(){
+            setInterval("toggleSound()", 100)
+        }
+        function toggleSound() {
+            var music = document.getElementById("vd");
+            if (music.paused) {
+                music.paused=false;
+                music.play();
+            }
+        }
+    </script>
+</body>
+</html>
