@@ -13,4 +13,4 @@
 
 - https://gitee.com/RuanJiaFeng2013
 
-https://gitee.com/RuanJiaFeng2013/meteor-shower/tree/master
+https://github.com/louislivi/fireworks

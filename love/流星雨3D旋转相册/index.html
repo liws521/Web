@@ -95,9 +95,10 @@
     </style>
   </head>
   <body>
-    <audio autoplay="autopaly">
+    <audio id="mymusic" autoplay="autopaly">
       <source src="renxi.mp3" type="audio/mp3" />
     </audio>
+
     <!-- 相册 -->
     <div id="box">
       <div></div>
@@ -466,6 +467,18 @@
           );
         })();
       })(this, document);
+    </script>
+        <script type="text/javascript">
+        window.onload = function(){
+            setInterval("toggleSound()", 100)
+        }
+        function toggleSound() {
+            var music = document.getElementById("mymusic");
+            if (music.paused) {
+                music.paused=false;
+                music.play();
+            }
+        }
     </script>
   </body>
 </html>
