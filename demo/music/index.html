@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>music</title>
+
+    <!-- jquery -->
+    <!-- <script src="https://libs.baidu.com/jquery/1.11.1/jquery.min.js" ></script> -->
+    <script src="js/jquery.min.js" ></script>
+    <!-- css -->
+    <link rel="stylesheet" href="css/music.css" />
+</head>
+<body>
+    <!-- 播放器 -->
+    <div id="app">
+      <div class="container_player">
+        <div class="music-box">
+          <!-- <img src="images/avatar.jpg" /> -->
+          <img src="img/01.jpg" />
+          <div class="mask">
+            <div class="mplayer" onclick="play()">
+              <i class="fa">
+                <span class="before"></span>
+                <span class="after"> </span>
+              </i>
+              <svg
+                class="loadingSvg"
+                width="25"
+                height="25"
+                viewBox="0,0,50,50"
+                style="
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                "
+              >
+                <circle></circle>
+              </svg>
+            </div>
+            <div class="m-circle m-progress">
+              <svg width="163" height="163" viewBox="0,0,163,163">
+                <circle
+                  cx="81"
+                  cy="81"
+                  r="159"
+                  stroke-width="8"
+                  stroke="rgba(255, 206, 113, 0.2)"
+                  fill="rgba(0,0,0,.2)"
+                ></circle>
+                <circle
+                  class="a"
+                  cx="81"
+                  cy="81"
+                  r="159"
+                  stroke-width="6"
+                  stroke="rgba(255, 206, 113, 1)"
+                  fill="none"
+                  stroke-dasharray="0 999"
+                  transform="matrix(0,-1,1,0,0,163)"
+                ></circle>
+              </svg>
+            </div>
+            <!-- 时间区域 -->
+            <div class="m_time">
+              <span class="mplayer_curtime">00:00</span>
+              <span class="m-join">/</span>
+              <span class="mplayer_durtime">00:00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 音乐 -->
+    <audio id="myAudio" src="mp3/yinyue.mp3" autoplay></audio>
+
+    <script src="js/music.js"></script>
+</body>
+</html>

@@ -331,6 +331,7 @@
       delete dots[this.id];
     };
 
+    // 同时var多个后序用到的变量
     var canvas = document.getElementById("canvas"),
       ctx = canvas.getContext("2d"),
       WIDTH,
@@ -348,6 +349,8 @@
     setCanvasSize();
     init();
 
+    // 获取document对象的根元素(html)的只读属性
+    // 设置Canvas大小为全屏
     function setCanvasSize() {
       (WIDTH = document.documentElement.clientWidth),
         (HEIGHT = document.documentElement.clientHeight);
