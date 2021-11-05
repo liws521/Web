@@ -12,7 +12,7 @@ $(function(){
 )
 
 function play2() {
-  if (audio.paused) {
+//   if (audio.paused) {
     audio.paused = false;
     audio.play();
     $(".music-box").addClass("mplaying");
@@ -32,7 +32,7 @@ function play2() {
         );
       }
     }, 100);
-  }
+//   }
   // } else {
   //   audio.pause();
   //   $(".music-box").removeClass("mplaying");
